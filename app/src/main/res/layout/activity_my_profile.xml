@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView_my_photo"
+        android:layout_width="198dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/my_photo" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Dwamena-Poku Albert"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_my_photo"
+        app:layout_constraintStart_toStartOf="@+id/imageView_my_photo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_my_photo" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+    <TextView
+        android:id="@+id/textView_track"
+        android:layout_width="292dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Track:                 Android"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+    <TextView
+        android:id="@+id/textView_country"
+        android:layout_width="285dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Country:            Ghana"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_track"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="@+id/textView_track"
+        app:layout_constraintTop_toBottomOf="@+id/textView_track" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="285dp"
+        android:layout_height="23dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Email:  albertopoku676@gmail.com"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_country"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_country"
+        app:layout_constraintTop_toBottomOf="@+id/textView_country" />
+
+    <TextView
+        android:id="@+id/textView_phone_number"
+        android:layout_width="285dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Phone Number:      233546435863"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_email"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email" />
+
+    <TextView
+        android:id="@+id/textView_slack_userName"
+        android:layout_width="294dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Slack Username:   @Albert"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_phone_number"
+        app:layout_constraintStart_toStartOf="@+id/textView_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phone_number" />
+</androidx.constraintlayout.widget.ConstraintLayout>
